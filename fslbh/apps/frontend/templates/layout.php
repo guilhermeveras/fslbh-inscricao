@@ -29,11 +29,11 @@
                 <ul>
 										<li><strong>Menu</strong></li>
 										<li><?php echo link_to('Página Inicial', 'inscricao/inicio') ?></li>
-										<li><?php echo link_to('Sobre o Evento', 'inscricao/inicio') ?></li>
+									<? /*	<li><?php echo link_to('Sobre o Evento', 'inscricao/inicio') ?></li>*/?>
 										<li><?php echo link_to('Programação', 'inscricao/programacao') ?></li>
-										<li><?php echo link_to('Local', 'inscricao/inicio') ?></li>
+									<? /*	<li><?php echo link_to('Local', 'inscricao/inicio') ?></li> */?>
 										<li><?php echo link_to('Faça sua Inscrição', 'cadastro/new') ?></li>
-										<li><?php echo link_to('Downloads', 'inscricao/inicio') ?></li>
+										<li><?php echo link_to('Downloads', 'inscricao/downloads') ?></li>
 										<li><?php echo link_to('Informações e Contato', 'inscricao/contato') ?></li>
                 </ul>
 

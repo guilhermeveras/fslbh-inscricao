@@ -161,6 +161,10 @@ Belo Horizonte - MG - Cep: 30.190-002<br />
 
   }
 
+  public function executeDownloads()
+  {
+
+  }
   public function executeFicha(sfWebRequest $request)
   {
 	$c = new Criteria();

@@ -1,37 +1,47 @@
 <?php slot('titulo', 'Página Inicial'); ?>
 
-<p>&nbsp;</p>
+<div class="tipo_dados">Informações sobre o evento</div>
 
-<p><center><img src="/images/fsl-logo.jpg"></center></p>
 
-<p>&nbsp;</p>
+O 2º Festival de Software Livre de Belo Horizonte
+acontecerá na <strong>UNATEC</strong> - Instituto UNA de Tecnologia que apoia o Software Livre e terá início das atividades às 8:00hs.
+<br /><br />
+No evento, serão realizadas palestras, oficinas e install fests tanto para iniciantes quanto para usuários avançados.
+<br /><br />
+O intuito do evento é agrupar cada vez mais os profissionais e entusiastas das diversas áreas da tecnologia, divulgando e ampliando o alcance da filosofia do Software Livre.
+<br /><br />
+Venha participar! Traga o seu computador pra instalarmos o GNU/Linux!
+<br /><br />
+As inscrições serão realizadas no menu ao lado "Faça sua Inscrição";<br>
+A sua inscrição será confirmada após a doação (no dia do evento) de um ou mais livros infanto-juvenil, as doações serão repassadas para a <strong>Fundação Espírita Cárita</strong><br />
+<br />Site: www.fundacaoespiritacarita.org.br
+<br /><br />
+<? /*
 
-<p>Com objetivo de apoiar e disseminar o uso do software livre na educação e na saúde, promovendo a interação dos usuários e entusiastas desta plataforma, a Escola de Saúde Pública do Estado de Minas Gerais (ESP-MG) realiza o 1º Festival Software Livre de BH. O encontro reunirá profissionais, estudantes e apaixonados pela filosofia do software live, já que Minas Gerais é um dos estados que mais utiliza essa plataforma no país e a ESP-MG é uma das poucas instituições públicas que utiliza-o 100%, apoiando e incentivando o uso desta iniciativa.</p>
+<div class="tipo_dados">News</div>
+
+*/
+
+?>
+
+
+<?php //@readfile('http://www.esp.mg.gov.br/galeria/zp-core/ultimos3albuns.php')?>
+
+
+
+<div class="tipo_dados">Local, Data e Hora</div>
 <p>
-No evento, de acesso gratuito, serão realizadas palestras, mini-cursos, oficinas e install fests tanto para iniciantes quanto para níveis mais avançados. O intuito do evento é agrupar cada vez mais os profissionais e entusiastas das diversas áreas da tecnologia, divulgando e ampliando o alcance da filosofia do Software Livre.</p>
-<p>Venha participar! Traga o seu computador pra instalarmos o GNU/Linux!</p>
-
-<p><strong>Data: 26/09/2009</strong><br/>&nbsp;<br />
-
-Local: Escola de Saúde Pública do Estado de Minas Gerais*<br/>
-Av. Augusto de Lima, 2061 Barro Preto – BH/MG<br/>
-*Entrada pela Rua Uberaba<br />
-Ponto de referência: Av. Augusto de Lima (Prédio Azul na esquina entre Av. Barbacena e Rua Uberaba), ao lado do Instituto São Rafael.<br/>
+<strong>Local: </strong><br />UNATEC - Instituto UNA de Tecnologia<br/>
+Rua  xxxxx  Belo Horizonte - MG<br/>
 </p>
-<p>
-Data limite para inscrição: 25/09/2009
-</p>
-<?php //if ($total >= 115) { ?>
-<p>
-<font color="red"><strong>Informamos que esse &eacute; o 2&ordm; lote de inscri&ccedil;&otilde;es que ser&aacute; para transmiss&atilde;o simult&acirc;nea de eventos e oficinas que acontecer&atilde;o no audit&oacute;rio.</strong></font>
-</p>
-<?php //} ?>
-<p>
-Informamos que nosso audit&oacute;rio tem capacidade para 115 pessoas.
-</p>
+<p><strong>Data: </strong>28/10/2009</p>
+<p><strong>Data limite para inscrição:</strong> 27/10/2009</p>
+<p><strong>Hora: </strong>A partir das 8:00h.</p>
 
-
+<!--
 <p>
-<strong>Realização:</strong><br />&nbsp;<br />
-<img src="/images/logo_kde_ubuntu_esp.jpg">
+<div class="tipo_dados">Realização:</div>
+<img src="/images/kde_ubuntu_logo.jpg">
+-->
+<br /><br />
 </p>

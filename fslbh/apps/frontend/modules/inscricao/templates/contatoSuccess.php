@@ -1,10 +1,6 @@
 <?php slot('titulo', 'Informações e contato'); ?>
+<div class="tipo_dados">Informações para contato</div>
 
-<br />
-
-<strong>Contato:</strong>
-
-<p>&nbsp;</p>
 
 <p>
 <strong>Amanda Oliveira</strong><br/>
@@ -14,14 +10,12 @@
 <p>
 <strong>Felipe Ribeiro</strong><br/>
 (31) 9377-4625<br/>
-<a href="mailto:felipe.ribeiro@esp.mg.gov.br">felipe.ribeiro@esp.mg.gov.br</a>
+<a href="mailto:fp.ribeiro@gmail.com">fp.ribeiro@gmail.com</a>
 </p>
+
+
 <p>
-<strong>Gestão de Tecnologia da Informação - GTI</strong><br/>
-(31) 3295-5147<br/>
-</p>
-<p>
-<strong>Manutenção e Suporte Técnico ao Sistema</strong><br/>
-Gerência de Desenvolvimento de Sistemas - GDSIS<br/>
-<a href="mailto:gdsis@esp.mg.gov.br">gdsis@esp.mg.gov.br</a>
+<strong>Guilherme Veras</strong><br/>
+(31) 8853-9260<br/>
+<a href="mailto:guilhermeveras@gmail.com">guilhermeveras@gmail.com</a>
 </p>
