@@ -1,0 +1,1 @@
+<a style="text-decoration: none;" href="/uploads/submissoes/<?php echo $trabalho->getArquivo(); ?>"><img src="/images/icons/page.png" align="top"> Ver</a>

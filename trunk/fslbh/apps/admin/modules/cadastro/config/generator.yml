@@ -1,0 +1,43 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Cadastro
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          cadastro
+    with_propel_route:     1
+    css:                   nothing
+
+    config:
+      actions: 
+        _delete: { credentials: usuarios }
+      fields:
+        linked_nome: {label: Nome}
+        trabalho_submetido: {label: Trabalho submetido?}
+        trabalho_titulo: {label: Título dos anexos}
+        #trabalho_situacao: {label: Situação}
+        #eixo_tematico: {label: Eixo temático}
+        #eixo_tematico_id: {label: Eixo temático}
+        titulo: {label: Título}
+        #select_mine: {label: Link_da_Publicacao}
+      list:    
+        title: Lista de cadastros realizados
+        display: [nome]
+        #display: [linked_nome, trabalho_submetido, trabalho_titulo]
+        sort: [nome, asc]
+        max_per_page: 10
+        object_actions: {}
+          #validar: ~
+          #_delete: ~
+        batch_actions:
+          validar: ~
+          _delete: ~
+        actions: {}
+      filter:  
+        display: [nome]
+      form: ~
+      edit: ~
+      new: ~

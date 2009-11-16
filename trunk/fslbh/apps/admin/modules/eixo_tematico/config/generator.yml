@@ -1,0 +1,44 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           EixoTematico
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          eixo_tematico
+    with_propel_route:     1
+    css:                   nothing
+
+    config:
+      actions: 
+        _new: {label: Novo cadastro}     
+        _delete: { credentials: usuarios }   
+      fields:  
+        descricao: {label: Descrição}
+      list:    
+        title: Eixo temático
+        display: [descricao]
+        sort: [descricao, asc]
+        object_actions:
+          _edit: {label: Editar}
+          _delete: ~
+        batch_actions: {}
+      filter:  ~
+      form:    
+        display:
+          Eixo temático: [descricao]
+      edit:    
+        title: Editar eixo temático
+        actions:
+          _save: {label: Salvar}
+          _list: {label: Voltar}
+          _delete: ~
+      new:     
+        title: Novo eixo temático
+        actions:
+          _save: {label: Salvar}
+          _save_and_add: {label: Salvar e Adicionar}
+          _list: {label: Voltar}
+    

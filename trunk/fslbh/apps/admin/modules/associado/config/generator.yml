@@ -1,0 +1,41 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Trabalho
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          associado
+    with_propel_route:     1
+    css:                   nothing
+
+    config:
+      actions: 
+        _delete: { credentials: usuarios }
+      fields:  
+        correspondencia: {label: E-mail}
+        eixo_tematico: {label: Eixo temático}
+        eixo_tematico_id: {label: Eixo temático}
+        titulo: {label: Título}
+      list:    
+        peer_method: doSelectMine
+        title: Lista de trabalhos associados para sua avaliação
+        display: [titulo, autores, correspondencia, eixo_tematico]
+        sort: [titulo, asc]
+        object_actions:
+          ver: { label: Visualizar, icon: /images/icon/page.png}
+          aprovar: ~
+          reprovar: ~
+          _delete: ~
+        batch_actions:
+          aprovar: { label: Aprovar, icon: "/images/icons/accept.png" }
+          reprovar: ~
+          _delete: 
+        actions: {}
+      filter:  
+        display: [titulo, eixo_tematico_id]
+      form: ~   
+      edit: ~    
+      new:  ~

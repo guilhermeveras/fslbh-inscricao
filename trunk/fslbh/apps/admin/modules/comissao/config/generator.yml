@@ -1,0 +1,38 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Comissao
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          comissao
+    with_propel_route:     1
+    css:                   nothing
+
+    config:
+      actions: ~
+      fields:  
+        usuario_id: {label: Login}
+      list:    
+        title: Integrantes da comissão
+        display: [membro, email]
+        sort: [membro, asc]
+        object_actions:
+         _edit: ~
+        batch_actions: {}
+      filter:  
+        display: [membro]
+      form:    ~
+      edit:    
+        title: Editando %%membro%%
+        display:
+          "Dados": [membro, email, usuario_id]
+        actions:
+          _save: {label: Salvar}
+          _list: {label: Voltar}
+      new:   
+        title: Novo membro
+        display:
+          "Dados": [membro, email, usuario_id]
