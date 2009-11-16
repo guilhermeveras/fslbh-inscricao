@@ -84,8 +84,8 @@ class CadastroForm extends BaseCadastroForm
       	'nome'                => 'Nome Completo:',
         'sexo'             	  => 'Sexo:',
       	'cpf'                 => 'CPF:',
-      	'email_profissional'  => 'E-mail:',
-      	'email_pessoal'       => 'E-mail Secundário:',
+      	'email_profissional'  => 'E-mail Profissional:',
+      	'email_pessoal'       => 'E-mail Pessoal:',
       	'municipio'          => 'Cidade:',
   		'estado_id'			  => 'UF:',
   		//'identificacao_participante_id' => 'Grau de Formação:',
@@ -134,42 +134,24 @@ class CadastroForm extends BaseCadastroForm
     ));
 
 
-
-
-	  $this->widgetSchema->setHelp('escolaridade_id','Informe aqui o seu grau de escolaridade, por exemplo: Superior Completo.');
-      $this->widgetSchema->setHelp('estado_civil_id','Informe aqui o seu estado civil, por exemplo: Casado(a), Solteiro(a), etc.');
       $this->widgetSchema->setHelp('sexo_id','Informe aqui o seu sexo, por exemplo: Masculino e Feminino.');
-      $this->widgetSchema->setHelp('estado_id','Informe aqui o estado aonde reside, por exemplo: Minas Gerais.');
-      $this->widgetSchema->setHelp('cidade_id'  ,'Informe aqui a cidade aonde reside, por exemplo: Belo Horizonte.');
-      $this->widgetSchema->setHelp('banco_id','Informe aqui o nome de um banco que você possua uma conta corrente, por exemplo: Banco do Brasil S/A.');
+      $this->widgetSchema->setHelp('estado','Informe aqui o estado aonde reside, por exemplo: Minas Gerais.');
+      $this->widgetSchema->setHelp('cidade'  ,'Informe aqui a cidade aonde reside, por exemplo: Belo Horizonte.');
       $this->widgetSchema->setHelp('nome','Informe aqui o seu nome completo, por exemplo: Paulo Coelho da Silva.');
-      $this->widgetSchema->setHelp('banco_conta','Informe aqui o número da conta no banco informado, por exemplo: 54845.');
-      $this->widgetSchema->setHelp('banco_agencia'  ,'Informe aqui o número da agência no banco informado, por exemplo: Paulo Coelho da Silva.');
       $this->widgetSchema->setHelp('telefone','Informe aqui o telefone para contato, por exemplo: (31) 5555-5555');
       $this->widgetSchema->setHelp('logradouro','Informe aqui o endereço, por exemplo: Rua das Acácias');
       $this->widgetSchema->setHelp('numero','Informe aqui o número do endereço da residência, por exemplo: 1500');
       $this->widgetSchema->setHelp('complemento','Informe aqui, se necessário, o complemento do endereço da residência, por exemplo: Apto 10, Fundos, Sala 205');
       $this->widgetSchema->setHelp('bairro','Informe aqui o bairro, por exemplo: Jardim Florido.');
-      $this->widgetSchema->setHelp('email','Informe aqui o seu e-mail pessoal, por exemplo: emaildopaulo@email.com.br');
+      $this->widgetSchema->setHelp('email_pessoal','Informe aqui o seu e-mail pessoal, por exemplo: emaildopaulo@email.com.br');
+      $this->widgetSchema->setHelp('email_profissional','Informe aqui o seu e-mail profissional, por exemplo: emaildopaulo@email.com.br');
       $this->widgetSchema->setHelp('cpf','Informe aqui o seu CPF, por exemplo: 000.111.222-33');
-      $this->widgetSchema->setHelp('rg','Informe aqui o seu RG, por exemplo: UF-1234567890');
-      $this->widgetSchema->setHelp('titulo_eleitor'   ,'Informe aqui o seu título de eleitor, por exemplo: 12345678910.');
-      $this->widgetSchema->setHelp('titulo_zona','Informe aqui a sua zona eleitoral, por exemplo: Paulo Coelho da Silva.');
-      $this->widgetSchema->setHelp('titulo_secao' ,'Informe aqui a sua seção eleitoral, por exemplo: 123.');
-      $this->widgetSchema->setHelp('doc_militar' ,'Informe aqui o número do seu certificado de reservista, por exemplo: RA-123456789.');
-      $this->widgetSchema->setHelp('pai','Informe aqui o nome completo do seu pai, por exemplo: Raimundo Coelho Sobrinho.');
-      $this->widgetSchema->setHelp('mae'  ,'Informe aqui o seu nome completo da sua mãe, por exemplo: Raimunda Silva Costa.');
       $this->widgetSchema->setHelp('data_nascimento' ,'Informe aqui a data do seu nascimento, por exemplo: 26/02/1975.');
       $this->widgetSchema->setHelp('celular','Informe aqui o número do seu celular, por exemplo: (31) 5555-5555.');
       $this->widgetSchema->setHelp('pais' ,'Informe aqui o seu país de origem, por exemplo: Brasil.');
-      $this->widgetSchema->setHelp('nis' ,'Informe aqui o seu registro de trabalho, por exemplo: NIS.');
       $this->widgetSchema->setHelp('cep' ,'Informe aqui o seu Código de Endereçamento Postal (CEP), por exemplo: 31000-000.');
-
-
-
-
-
-
+      $this->widgetSchema->setHelp('instituicao_trabalho' ,'Informe aqui o nome da empresa que você trabalha, por exemplo: Banco do Brasil.');
+      $this->widgetSchema->setHelp('profissao' ,'Informe aqui a sua profissão, por exemplo: Analista de Sistemas.');
 
 
       $decorator = new totWidgetFormSchemaFormatter($this->getWidgetSchema());
@@ -184,7 +166,7 @@ class CadastroForm extends BaseCadastroForm
       new sfValidatorAnd(array(
         new sfValidatorPropelUnique(array('model' => 'Cadastro', 'column' => array('cpf')), array('invalid' =>'Este CPF já esta cadastrado')),
         //new sfValidatorPropelUnique(array('model' => 'Cadastro', 'column' => array('email_pessoal')), array('invalid' =>'Este e-mail já esta cadastrado')),
-        new sfValidatorPropelUnique(array('model' => 'Cadastro', 'column' => array('email_profissional')), array('invalid' =>'Este e-mail já esta cadastrado')),
+        new sfValidatorPropelUnique(array('model' => 'Cadastro', 'column' => array('email_pessoal')), array('invalid' =>'Este e-mail já esta cadastrado')),
       ))
     );
 
