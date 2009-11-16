@@ -1,0 +1,38 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Cadastro
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          confirmacao
+    with_propel_route:     1
+    css:                   nothing
+
+    config:
+      actions: 
+        _delete: { credentials: usuarios }
+      fields:  
+        trabalho_submetido: {label: Trabalho submetido?}
+        trabalho_titulo: {label: Título dos trabalhos}
+        trabalho_situacao: {label: Situação}
+        eixo_tematico: {label: Eixo temático}
+        eixo_tematico_id: {label: Eixo temático}
+        titulo: {label: Título}
+      list:    
+        title: Lista de inscrições confirmadas
+        display: [nome, trabalho_submetido, trabalho_titulo, eixo_tematico, trabalho_situacao]
+        sort: [nome, asc]
+        object_actions:
+          _delete: ~
+        batch_actions:
+          validar: ~
+          _delete: ~
+        actions: {}
+      filter:  
+        display: [nome]
+      form: ~
+      edit: ~
+      new:     ~

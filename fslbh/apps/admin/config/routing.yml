@@ -1,0 +1,96 @@
+comissao:
+  class: sfPropelRouteCollection
+  options:
+    model:                Comissao
+    module:               comissao
+    prefix_path:          comissao
+    column:               id
+    with_wildcard_routes: true
+
+eixo_tematico:
+  class: sfPropelRouteCollection
+  options:
+    model:                EixoTematico
+    module:               eixo_tematico
+    prefix_path:          eixo_tematico
+    column:               id
+    with_wildcard_routes: true
+
+identificacao_participante:
+  class: sfPropelRouteCollection
+  options:
+    model:                IdentificacaoParticipante
+    module:               identificacao_participante
+    prefix_path:          identificacao_participante
+    column:               id
+    with_wildcard_routes: true
+
+trabalho:
+  class: sfPropelRouteCollection
+  options:
+    model:                Trabalho
+    module:               trabalho
+    prefix_path:          trabalho
+    column:               id
+    with_wildcard_routes: true
+    
+aprovado:
+  class: sfPropelRouteCollection
+  options:
+    model:                Trabalho
+    module:               aprovado
+    prefix_path:          aprovado
+    column:               id
+    with_wildcard_routes: true
+    
+associado:
+  class: sfPropelRouteCollection
+  options:
+    model:                Trabalho
+    module:               associado
+    prefix_path:          associado
+    column:               id
+    with_wildcard_routes: true
+
+cadastro:
+  class: sfPropelRouteCollection
+  options:
+    model:                Cadastro
+    module:               cadastro
+    prefix_path:          cadastro
+    column:               id
+    with_wildcard_routes: true
+
+confirmacao:
+  class: sfPropelRouteCollection
+  options:
+    model:                Cadastro
+    module:               confirmacao
+    prefix_path:          confirmacao
+    column:               id
+    with_wildcard_routes: true
+
+# sfGuard rules
+sf_guard_signin:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin }
+ 
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+ 
+sf_guard_password:
+  url:   /request_password
+  param: { module: sfGuardAuth, action: password }
+  
+# default rules
+homepage:
+  url:   /
+  param: { module: sfAdminDash, action: dashboard }
+
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

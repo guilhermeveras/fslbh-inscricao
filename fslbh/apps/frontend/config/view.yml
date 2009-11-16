@@ -1,0 +1,17 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        FSLBH - Festival de Software Livre de Belo Horizonte
+    description:  FSLBH - Festival de Software Livre de Belo Horizonte
+    keywords:     FSLBH, FSL, Festival, Software, Livre, Belo, Horizonte
+    language:     pt-br
+    robots:       index, follow
+
+  stylesheets:    [main.css]
+
+  javascripts:    [/sfProtoculousPlugin/js/prototype.js, "/sfProtoculousPlugin/js/scriptaculous.js?load=builder,effects", /sfProtoculousPlugin/js/modalbox.js, functions.js]
+
+  has_layout:     on
+  layout:         layout

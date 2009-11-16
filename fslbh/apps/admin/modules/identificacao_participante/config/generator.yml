@@ -1,0 +1,43 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           IdentificacaoParticipante
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          identificacao_participante
+    with_propel_route:     1
+    css:                   nothing
+
+    config:
+      actions: 
+        _new: {label: Novo cadastro}     
+        _delete: { credentials: usuarios }   
+      fields:  
+        descricao: {label: Descrição}
+      list:    
+        title: Identificação do participante
+        display: [descricao]
+        sort: [descricao, asc]
+        object_actions:
+          _edit: {label: Editar}
+          _delete: ~
+        batch_actions: {}
+      filter:  ~
+      form:    
+        display:
+          Identificação do Participante: [descricao]
+      edit:    
+        title: Editar identificação de participante
+        actions:
+          _save: {label: Salvar}
+          _list: {label: Voltar}
+          _delete: ~
+      new:     
+        title: Nova identificação de participante
+        actions:
+          _save: {label: Salvar}
+          _save_and_add: {label: Salvar e Adicionar}
+          _list: {label: Voltar}
