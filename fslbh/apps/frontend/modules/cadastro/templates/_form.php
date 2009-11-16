@@ -254,7 +254,7 @@
 		        </div>
 
 		  <?php endif; ?>
-		  
+
 
 <?php #################################################################################### ?>
 
@@ -281,8 +281,8 @@
 		        </div>
 
 		  <?php endif; ?>
-		  
-		  
+
+
 <?php #################################################################################### ?>
 
 
@@ -304,32 +304,6 @@
 		                <div class="form-campos">
 		                        <?php echo $form['logradouro'] ?>
 				                <?php echo $form['logradouro']->renderHelp() ?>
-		                </div>
-		        </div>
-
-		  <?php endif; ?>
-
-<?php #################################################################################### ?>
-
-
-				<?php if ($form['bairro']->hasError()): ?>
-
-		        <div class="form-linha-error">
-		                <div class="form-rotulo-erro"><?php echo $form['bairro']->renderLabel() ?></div>
-		                <div class="form-campos-erro">
-		                       <?php echo $form['bairro'] ?>
-		                       <?php echo $form['bairro']->renderHelp() ?>
-		                       <?php echo $form['bairro']->renderError() ?>
-		                </div>
-		        </div>
-
-		  <?php else: ?>
-
-		        <div class="form-linha">
-		                <div class="form-rotulo"><?php echo $form['bairro']->renderLabel() ?></div>
-		                <div class="form-campos">
-		                        <?php echo $form['bairro'] ?>
-				                <?php echo $form['bairro']->renderHelp() ?>
 		                </div>
 		        </div>
 
@@ -386,6 +360,32 @@
 		        </div>
 
 		  <?php endif; ?>
+<?php #################################################################################### ?>
+
+
+				<?php if ($form['bairro']->hasError()): ?>
+
+		        <div class="form-linha-error">
+		                <div class="form-rotulo-erro"><?php echo $form['bairro']->renderLabel() ?></div>
+		                <div class="form-campos-erro">
+		                       <?php echo $form['bairro'] ?>
+		                       <?php echo $form['bairro']->renderHelp() ?>
+		                       <?php echo $form['bairro']->renderError() ?>
+		                </div>
+		        </div>
+
+		  <?php else: ?>
+
+		        <div class="form-linha">
+		                <div class="form-rotulo"><?php echo $form['bairro']->renderLabel() ?></div>
+		                <div class="form-campos">
+		                        <?php echo $form['bairro'] ?>
+				                <?php echo $form['bairro']->renderHelp() ?>
+		                </div>
+		        </div>
+
+		  <?php endif; ?>
+
 
 <?php #################################################################################### ?>
 
@@ -412,7 +412,7 @@
 		        </div>
 
 		  <?php endif; ?>
-		  
+
 <?php #################################################################################### ?>
 
 
