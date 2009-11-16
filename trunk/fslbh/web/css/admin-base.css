@@ -1,0 +1,167 @@
+/*------------------------------CSS RESET--------------------------------------*/
+
+/*
+Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.5.2
+*/
+html{color:#000;background:#FFF;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;border:0px;/*padding:0;margin:0;*/}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym {border:0;font-variant:normal;}
+/* to preserve line-height and selector appearance */
+sup {vertical-align:text-top;}
+sub {vertical-align:text-bottom;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+/*to enable resizing for IE*/
+input,textarea,select{font-size:100%;}
+/*because legend doesn't inherit in IE */
+legend{color:#000;}
+
+/*--------------------------------CSS FONTS------------------------------------*/
+
+html body{
+	color: 				#000;
+	font-size: 			13px;
+	font-family: 		arial,helvetica,clean,sans-serif;
+	font-style: 		normal;
+	font-stretch: 		normal;
+	font-variant: 		normal;
+	font-weight: 		normal;
+	text-align: 		left;
+	text-decoration: 	none;
+	text-transform: 	none;
+	text-shadow: 		none;
+}
+pre,code,kbd,samp,tt {
+	font-family:		monospace;
+	font-size:			12px;
+	color: 				#CCC;
+}
+sup {
+	vertical-align:		text-top;
+	font-size: 			10px;
+}
+sub {
+	vertical-align:		text-bottom;
+	font-size:			10px;
+}
+abbr, acronym{
+	text-decoration: 	underline;
+}
+strong{
+	font-weight: 		bold;
+}
+small{
+	font-size: 			8px;
+}
+big{
+	font-size:			30px;
+}
+h1{
+	font-size: 			24px;
+}
+h2{
+	font-size: 			20px;
+}
+h3{
+	font-size: 			18px;
+}
+h4{
+	font-size: 			15px;
+}
+table{
+	font-size:			13px;	
+	font-weight: 		normal;	
+}
+th{ 
+	font-size:			13px;
+	color:				white;
+	font-weight: 		bold;
+}
+td{
+	font-size:			12px;
+	font-weight: 		normal;
+	color: 				#333;
+}
+a:link{
+	text-decoration: 	none;
+	color:				blue;
+}
+a:visited{
+	text-decoration: 	none;
+	color:				blue;
+}
+a:hover{
+	text-decoration: 	none;
+	color: 				gray;
+}
+a:active{
+	text-decoration: 	none;
+	color:				blue;
+}
+
+label{
+	font-weight: 		bold;
+}
+
+/*--------------------------------CSS TABLE STYLE------------------------------------*/
+
+table{
+	border: 			0;
+	margin-top: 		10px;
+	width: 				100%;
+}
+th{
+	background: 		#0d4169;
+	border: 			1px solid white;
+	height: 			25px;
+	vertical-align: 	middle;
+	text-align: 		center;
+}
+td{
+	border: 			1px solid white;
+	background-color:   #f5f5f5;
+	padding:			2px;
+}
+.central{
+	text-align:			center;
+}
+.par {
+	background-color:	#dddddd;
+	border:				1px solid white;
+}
+.nota{
+	float:				left;
+	margin-left: 		20px;
+}
+
+.clear{clear: both;width: 0px;height: 0px;}
+
+textarea{
+	border:				1px solid #CCC;	
+}
+
+/*-------------------ADMIN-----------------------------------*/
+/*-------------------Disciplinas-----------------------------------*/
+
+	thead.cabecalho-lista-disciplinas tr th{
+		background: #0d4169;
+		color: #fff;
+		font-size: 12px;
+		padding: 3px;
+		border: 1px solid white;
+	}
+	#lista-disciplinas-1{width:69%;}
+	#lista-disciplinas-2{width:20%;}	
+	#lista-disciplinas-3{width:11%;}
+
+/*-------------------ADMIN-----------------------------------*/
+/*-------------------Disciplinas-Adicionar-----------------------------------*/

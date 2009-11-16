@@ -1,0 +1,80 @@
+all:
+  sf_admin_dash:
+    web_dir:              /sfAdminDashPlugin
+    image_dir:            /sfAdminDashPlugin/images/icons/
+    default_image:        config.png
+    resize_mode:          thumbnail
+    logout:               yes
+    site:                 Inscrição On-line
+    include_jquery:       yes
+    
+    categories:
+       Cadastros:
+         items:
+           Cadastros realizados:
+             url:    cadastro
+             image:  generic.png
+#           Inscrições confirmadas:
+#             url:    confirmacao
+#             image: checkin.png
+#             image: checkin.png
+#         credentials:  [administracao]
+
+#       Submissões:
+#         items:
+#           Trabalhos não avaliados:
+#             url:    trabalho
+#             image:  addedit.png
+#           Trabalhos aprovados:
+#             url:    aprovado
+#             image: checkin.png
+#           Trabalhos associados:
+#             url:    associado
+#             image: menu.png
+#         credentials:  [administracao]
+                             
+       Relatórios (em Excel):
+         items:
+           Lista de inscritos:
+             url:    relatorio/cadastrados
+             image: query.png
+           Lista por palestras:
+             url:    relatorio/palestra
+             image: searchtext.png
+#           Lista de trabalhos submetidos:
+#             url:    relatorio/confirmados
+#             image: query.png
+#           Lista de trabalhos aprovados:
+#             url:    relatorio/confirmados
+#             image: searchtext.png
+#         credentials:  [administracao]
+             
+       Usuários:
+         items:
+           Usuários:
+             url:    sfGuardUser/index
+             image: addusers.png
+           Grupos:
+             url:    sfGuardGroup/index
+             image: users.png
+           Permissões:
+             url:    sfGuardPermission/index
+             image: cpanel.png
+#           Comissão avaliadora:
+#             url: comissao
+#             image: categories.png
+#         credentials:  [usuarios]
+         
+#       Dados do cadastro:
+#         items:
+#           Identificação do Participante:
+#             url:    identificacao_participante
+#             image: categories.png
+#           Eixo temático:
+#             url:    eixo_tematico
+#             image: categories.png      
+#         credentials:  [administracao]
+             
+       
+           
+

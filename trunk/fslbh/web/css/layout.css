@@ -1,0 +1,86 @@
+html, body
+{
+	background: url("../images/bg_home.png")  repeat-x;
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana;
+}
+h1 { color: #3c779f;}
+#topo
+{
+	margin: 0px;
+	padding: 0px;
+	height: 120px;
+	width: 100%;
+  	background: url("../images/bg_page.png") repeat-x;
+  	display: block;
+  	border-bottom: 1px solid #ccc;
+  	float: left;
+}
+#topo ul 
+{
+	margin: 0px;
+	padding: 0px;
+	
+}
+#topo ul li
+{
+	
+	font-size: 12px;
+	font-weight: bold;
+	list-style: none; margin: 0px; padding: 0px;
+	display: block;
+	float: left;
+	width: 130px;
+	text-align: center;
+	
+}
+#topo ul li a 
+{
+	text-decoration: none;
+	display: block;
+	padding-top: 10px;
+	height: 40px;
+	color: #999;
+}
+
+#topo ul li a:hover
+{
+	color: #3c779f;
+	background: url("../images/bg_page.png") repeat-x;
+	background-position: 0px -5px;
+}
+
+#logomarca
+{
+	margin: 0px;
+	padding: 0px;
+	background: url("../images/logomarca.png") no-repeat;
+	background-position: 0px -35px;
+	width: 100%;
+	display: block;
+	height: 70px;
+}
+
+#formulario
+{
+	text-align: center;
+	width: 270px;
+	margin: 10px auto;
+}
+#corpo
+{
+ 	width: 100%;
+ 	float: left;
+ 	margin-top: 10px;
+ 	padding: 0px;
+ 	
+}
+
+#sf_admin_container 
+{
+	width:  1000px;
+ 	margin: 10px auto;
+		
+
+}
