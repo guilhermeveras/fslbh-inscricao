@@ -1,0 +1,28 @@
+propel:
+  _attributes:
+    package: lib.model
+    defaultIdMethod: native
+  cadastro:
+    _attributes: { phpName: Cadastro }
+    id: { type: INTEGER, primaryKey: true, autoIncrement: true, required: true }
+    nome: { type: VARCHAR, size: '255', required: true }
+    cpf: { type: VARCHAR, size: '15', required: true }
+    email_pessoal: { type: VARCHAR, size: '255', required: false }
+    email_profissional: { type: VARCHAR, size: '255', required: true }
+    municipio: { type: VARCHAR, size: '255', required: true }
+    telefone: { type: VARCHAR, size: '15', required: true }
+    validado: { type: BOOLEAN, required: true, defaultValue: false }
+    logradouro: { type: VARCHAR, size: '255', required: true }
+    bairro: { type: VARCHAR, size: '255', required: true }
+    numero: { type: INTEGER, required: true, defaultValue: '0' }
+    complemento: { type: VARCHAR, size: '255', required: false }
+    estado: { type: VARCHAR, size: '2', required: true }
+    cep: { type: VARCHAR, size: '9', required: true }
+    created_at: { type: TIMESTAMP, required: false }
+    celular: { type: VARCHAR, size: '255', required: false }
+    instituicao_trabalho: { type: VARCHAR, size: '255', required: false }
+    profissao: { type: VARCHAR, size: '255', required: true }
+    opcao_1_oficina: { type: INTEGER, required: false }
+    opcao_2_oficina: { type: INTEGER, required: false }
+    sexo: { type: BOOLEAN, required: false }
+    _uniques: { cadastro_cpf_key: [cpf], cadastro_email_profissional_key: [email_profissional] }

@@ -1,0 +1,45 @@
+#dev:
+#  propel:
+#    param:
+#      classname: DebugPDO
+#test:
+#  propel:
+#    param:
+#      classname: DebugPDO
+#all:
+#  propel:
+#    class: sfPropelDatabase
+#    param:
+#     classname: PropelPDO
+#     dsn: 'sqlite:%SF_DATA_DIR%/sandbox.db'
+#     username: root
+#     password: null
+#     encoding: utf8
+#     persistent: true
+#     pooling: true
+#all:
+# propel:
+#   class:   sfPropelDatabase
+#   param:
+#     phptype: pgsql
+#     host:    localhost
+#     dsn:     localhost
+#     database: inscricao_qualidade
+#     username: postgres
+#     password: null
+#     persistent: true
+#     pooling: true
+#
+all:
+  propel:
+    class: sfPropelDatabase
+    param:
+      classname: PropelPDO
+      dsn: 'pgsql:host=localhost;dbname=kdeubuntu'
+      username: postgres
+      password: null
+      encoding: utf8
+      persistent: true
+      pooling: true
+
+
