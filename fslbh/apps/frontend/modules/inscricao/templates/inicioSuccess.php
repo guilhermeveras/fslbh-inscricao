@@ -32,7 +32,9 @@ A sua inscrição será confirmada após a doação (no dia do evento) de um ou 
 <div class="tipo_dados">Local, Data e Hora</div>
 <p>
 <strong>Local: </strong><br />UNATEC - Instituto UNA de Tecnologia<br/>
-Rua  xxxxx  Belo Horizonte - MG<br/>
+Campus Barro Preto<br/>
+Rua Goitacazes n. 1159, Barro Preto - Belo Horizonte - MG<br/>
+<a href="http://www.google.com/maps?f=q&source=s_q&hl=pt-BR&geocode=&q=Rua+Goitacazes+n.+1159,+Barro+Preto+-+Belo+Horizonte+-+MG&sll=37.0625,-95.677068&sspn=34.313287,79.013672&ie=UTF8&hq=&hnear=R.+dos+Goitacazes,+1159+-+Barro+Preto,+Belo+Horizonte+-+MG,+30190-050,+Brasil&ll=-19.92022,-43.948424&spn=0.009946,0.01929&z=16&iwloc=A" target="_blank">Como chegar</a><br />
 </p>
 <p><strong>Data: </strong>28/10/2009</p>
 <p><strong>Data limite para inscrição:</strong> 27/10/2009</p>
