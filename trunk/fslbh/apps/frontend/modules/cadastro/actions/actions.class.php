@@ -12,11 +12,17 @@ class cadastroActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
+  	$this->setTemplate('new');
+
+
     $this->cadastro_list = CadastroPeer::doSelect(new Criteria());
   }
 
   public function executeShow(sfWebRequest $request)
   {
+  	 $this->setTemplate('new');
+
+
     $this->cadastro = CadastroPeer::retrieveByPk($request->getParameter('id'));
     $this->forward404Unless($this->cadastro);
   }
@@ -39,12 +45,17 @@ class cadastroActions extends sfActions
 
   public function executeEdit(sfWebRequest $request)
   {
+  	 $this->setTemplate('new');
+
+
     $this->forward404Unless($cadastro = CadastroPeer::retrieveByPk($request->getParameter('id')), sprintf('Object cadastro does not exist (%s).', $request->getParameter('id')));
     $this->form = new CadastroForm($cadastro);
   }
 
   public function executeUpdate(sfWebRequest $request)
   {
+  	 $this->setTemplate('new');
+
     $this->forward404Unless($request->isMethod('post') || $request->isMethod('put'));
     $this->forward404Unless($cadastro = CadastroPeer::retrieveByPk($request->getParameter('id')), sprintf('Object cadastro does not exist (%s).', $request->getParameter('id')));
     $this->form = new CadastroForm($cadastro);
@@ -56,6 +67,8 @@ class cadastroActions extends sfActions
 
   public function executeDelete(sfWebRequest $request)
   {
+  	 $this->setTemplate('new');
+
     $request->checkCSRFProtection();
 
     $this->forward404Unless($cadastro = CadastroPeer::retrieveByPk($request->getParameter('id')), sprintf('Object cadastro does not exist (%s).', $request->getParameter('id')));
@@ -70,8 +83,60 @@ class cadastroActions extends sfActions
     if ($form->isValid())
     {
       $cadastro = $form->save();
+ 	// Envia e-mail de confirmacao
+      $this->sendConfirmacaoCadastro($cadastro);
 
-      $this->redirect('cadastro/edit?id='.$cadastro->getId());
+      $this->redirect('inscricao/menssagem');
+
     }
   }
+
+
+  public function sendConfirmacaoCadastro($pessoa)
+  {
+
+		$to = $pessoa->getEmailPessoal().' , '.$pessoa->getEmailProfissional();
+
+		$headers  = 'MIME-Version: 1.0' . "\r\n";
+		$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+		$headers .= 'From: Inscrição Online - FSL-BH <contato@fslbh.org>' . "\r\n";
+		$subject = 'Confirmação de Cadastro - FSL-BH';
+		$message = '
+<html>
+<head>
+ 	  <title>Inscrição Online</title>
+</head>
+<body>
+<center>
+      <small>Atenção este e-mail foi gerado automaticamente favor não responder.</small>
+<br>
+<table>
+<tr>
+<td>
+<br />
+<br />
+	Prezado(a) <strong> '.$pessoa->getNome().'</strong>,
+<br />
+
+<p>Sua <strong>inscrição no Festival de Software Livre</strong> foi realizada com sucesso.</p>
+
+<p>Lembramos que o credenciamento ocorrerá  as 8h no dia 28/11/2009.</p>
+
+<p>Att,<br />
+Equipe FSL-BH.
+</p>
+
+<br />
+
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html>
+';
+	mail($to, $subject, $message, $headers);
+
+  }
+
 }
