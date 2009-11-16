@@ -15,57 +15,6 @@
       <?php echo $form->renderGlobalErrors() ?>
 
 
-
-
-				<?php if ($form['nome']->hasError()): ?>
-
-		        <div class="form-linha-error">
-		                <div class="form-rotulo-erro"><?php echo $form['nome']->renderLabel() ?></div>
-		                <div class="form-campos-erro">
-		                       <?php echo $form['nome'] ?>
-		                       <?php echo $form['nome']->renderHelp() ?>
-		                       <?php echo $form['nome']->renderError() ?>
-		                </div>
-		        </div>
-
-		  <?php else: ?>
-
-		        <div class="form-linha">
-		                <div class="form-rotulo"><?php echo $form['nome']->renderLabel() ?></div>
-		                <div class="form-campos">
-		                        <?php echo $form['nome'] ?>
-				                <?php echo $form['nome']->renderHelp() ?>
-		                </div>
-		        </div>
-
-		  <?php endif; ?>
-
-<?php #################################################################################### ?>
-
-
-				<?php if ($form['sexo']->hasError()): ?>
-
-		        <div class="form-linha-error">
-		                <div class="form-rotulo-erro"><?php echo $form['sexo']->renderLabel() ?></div>
-		                <div class="form-campos-erro">
-		                       <?php echo $form['sexo'] ?>
-		                       <?php echo $form['sexo']->renderHelp() ?>
-		                       <?php echo $form['sexo']->renderError() ?>
-		                </div>
-		        </div>
-
-		  <?php else: ?>
-
-		        <div class="form-linha">
-		                <div class="form-rotulo"><?php echo $form['sexo']->renderLabel() ?></div>
-		                <div class="form-campos">
-		                        <?php echo $form['sexo'] ?>
-				                <?php echo $form['sexo']->renderHelp() ?>
-		                </div>
-		        </div>
-
-		  <?php endif; ?>
-
 <?php #################################################################################### ?>
 
 
@@ -117,6 +66,59 @@
 		        </div>
 
 		  <?php endif; ?>
+		  
+<?php #################################################################################### ?>
+
+				<?php if ($form['nome']->hasError()): ?>
+
+		        <div class="form-linha-error">
+		                <div class="form-rotulo-erro"><?php echo $form['nome']->renderLabel() ?></div>
+		                <div class="form-campos-erro">
+		                       <?php echo $form['nome'] ?>
+		                       <?php echo $form['nome']->renderHelp() ?>
+		                       <?php echo $form['nome']->renderError() ?>
+		                </div>
+		        </div>
+
+		  <?php else: ?>
+
+		        <div class="form-linha">
+		                <div class="form-rotulo"><?php echo $form['nome']->renderLabel() ?></div>
+		                <div class="form-campos">
+		                        <?php echo $form['nome'] ?>
+				                <?php echo $form['nome']->renderHelp() ?>
+		                </div>
+		        </div>
+
+		  <?php endif; ?>
+
+<?php #################################################################################### ?>
+
+
+				<?php if ($form['sexo']->hasError()): ?>
+
+		        <div class="form-linha-error">
+		                <div class="form-rotulo-erro"><?php echo $form['sexo']->renderLabel() ?></div>
+		                <div class="form-campos-erro">
+		                       <?php echo $form['sexo'] ?>
+		                       <?php echo $form['sexo']->renderHelp() ?>
+		                       <?php echo $form['sexo']->renderError() ?>
+		                </div>
+		        </div>
+
+		  <?php else: ?>
+
+		        <div class="form-linha">
+		                <div class="form-rotulo"><?php echo $form['sexo']->renderLabel() ?></div>
+		                <div class="form-campos">
+		                        <?php echo $form['sexo'] ?>
+				                <?php echo $form['sexo']->renderHelp() ?>
+		                </div>
+		        </div>
+
+		  <?php endif; ?>
+
+
 
 <?php #################################################################################### ?>
 
@@ -196,31 +198,7 @@
 
 		  <?php endif; ?>
 
-<?php #################################################################################### ?>
 
-
-				<?php if ($form['municipio']->hasError()): ?>
-
-		        <div class="form-linha-error">
-		                <div class="form-rotulo-erro"><?php echo $form['municipio']->renderLabel() ?></div>
-		                <div class="form-campos-erro">
-		                       <?php echo $form['municipio'] ?>
-		                       <?php echo $form['municipio']->renderHelp() ?>
-		                       <?php echo $form['municipio']->renderError() ?>
-		                </div>
-		        </div>
-
-		  <?php else: ?>
-
-		        <div class="form-linha">
-		                <div class="form-rotulo"><?php echo $form['municipio']->renderLabel() ?></div>
-		                <div class="form-campos">
-		                        <?php echo $form['municipio'] ?>
-				                <?php echo $form['municipio']->renderHelp() ?>
-		                </div>
-		        </div>
-
-		  <?php endif; ?>
 
 <?php #################################################################################### ?>
 
@@ -248,32 +226,62 @@
 
 		  <?php endif; ?>
 
+
+
 <?php #################################################################################### ?>
 
 
-				<?php if ($form['validado']->hasError()): ?>
+				<?php if ($form['celular']->hasError()): ?>
 
 		        <div class="form-linha-error">
-		                <div class="form-rotulo-erro"><?php echo $form['validado']->renderLabel() ?></div>
+		                <div class="form-rotulo-erro"><?php echo $form['celular']->renderLabel() ?></div>
 		                <div class="form-campos-erro">
-		                       <?php echo $form['validado'] ?>
-		                       <?php echo $form['validado']->renderHelp() ?>
-		                       <?php echo $form['validado']->renderError() ?>
+		                       <?php echo $form['celular'] ?>
+		                       <?php echo $form['celular']->renderHelp() ?>
+		                       <?php echo $form['celular']->renderError() ?>
 		                </div>
 		        </div>
 
 		  <?php else: ?>
 
 		        <div class="form-linha">
-		                <div class="form-rotulo"><?php echo $form['validado']->renderLabel() ?></div>
+		                <div class="form-rotulo"><?php echo $form['celular']->renderLabel() ?></div>
 		                <div class="form-campos">
-		                        <?php echo $form['validado'] ?>
-				                <?php echo $form['validado']->renderHelp() ?>
+		                        <?php echo $form['celular'] ?>
+				                <?php echo $form['celular']->renderHelp() ?>
 		                </div>
 		        </div>
 
 		  <?php endif; ?>
+		  
 
+<?php #################################################################################### ?>
+
+
+				<?php if ($form['cep']->hasError()): ?>
+
+		        <div class="form-linha-error">
+		                <div class="form-rotulo-erro"><?php echo $form['cep']->renderLabel() ?></div>
+		                <div class="form-campos-erro">
+		                       <?php echo $form['cep'] ?>
+		                       <?php echo $form['cep']->renderHelp() ?>
+		                       <?php echo $form['cep']->renderError() ?>
+		                </div>
+		        </div>
+
+		  <?php else: ?>
+
+		        <div class="form-linha">
+		                <div class="form-rotulo"><?php echo $form['cep']->renderLabel() ?></div>
+		                <div class="form-campos">
+		                        <?php echo $form['cep'] ?>
+				                <?php echo $form['cep']->renderHelp() ?>
+		                </div>
+		        </div>
+
+		  <?php endif; ?>
+		  
+		  
 <?php #################################################################################### ?>
 
 
@@ -403,84 +411,34 @@
 		        </div>
 
 		  <?php endif; ?>
-
+		  
 <?php #################################################################################### ?>
 
 
-				<?php if ($form['cep']->hasError()): ?>
+				<?php if ($form['municipio']->hasError()): ?>
 
 		        <div class="form-linha-error">
-		                <div class="form-rotulo-erro"><?php echo $form['cep']->renderLabel() ?></div>
+		                <div class="form-rotulo-erro"><?php echo $form['municipio']->renderLabel() ?></div>
 		                <div class="form-campos-erro">
-		                       <?php echo $form['cep'] ?>
-		                       <?php echo $form['cep']->renderHelp() ?>
-		                       <?php echo $form['cep']->renderError() ?>
+		                       <?php echo $form['municipio'] ?>
+		                       <?php echo $form['municipio']->renderHelp() ?>
+		                       <?php echo $form['municipio']->renderError() ?>
 		                </div>
 		        </div>
 
 		  <?php else: ?>
 
 		        <div class="form-linha">
-		                <div class="form-rotulo"><?php echo $form['cep']->renderLabel() ?></div>
+		                <div class="form-rotulo"><?php echo $form['municipio']->renderLabel() ?></div>
 		                <div class="form-campos">
-		                        <?php echo $form['cep'] ?>
-				                <?php echo $form['cep']->renderHelp() ?>
+		                        <?php echo $form['municipio'] ?>
+				                <?php echo $form['municipio']->renderHelp() ?>
 		                </div>
 		        </div>
 
 		  <?php endif; ?>
 
-<?php #################################################################################### ?>
 
-
-				<?php if ($form['created_at']->hasError()): ?>
-
-		        <div class="form-linha-error">
-		                <div class="form-rotulo-erro"><?php echo $form['created_at']->renderLabel() ?></div>
-		                <div class="form-campos-erro">
-		                       <?php echo $form['created_at'] ?>
-		                       <?php echo $form['created_at']->renderHelp() ?>
-		                       <?php echo $form['created_at']->renderError() ?>
-		                </div>
-		        </div>
-
-		  <?php else: ?>
-
-		        <div class="form-linha">
-		                <div class="form-rotulo"><?php echo $form['created_at']->renderLabel() ?></div>
-		                <div class="form-campos">
-		                        <?php echo $form['created_at'] ?>
-				                <?php echo $form['created_at']->renderHelp() ?>
-		                </div>
-		        </div>
-
-		  <?php endif; ?>
-
-<?php #################################################################################### ?>
-
-
-				<?php if ($form['celular']->hasError()): ?>
-
-		        <div class="form-linha-error">
-		                <div class="form-rotulo-erro"><?php echo $form['celular']->renderLabel() ?></div>
-		                <div class="form-campos-erro">
-		                       <?php echo $form['celular'] ?>
-		                       <?php echo $form['celular']->renderHelp() ?>
-		                       <?php echo $form['celular']->renderError() ?>
-		                </div>
-		        </div>
-
-		  <?php else: ?>
-
-		        <div class="form-linha">
-		                <div class="form-rotulo"><?php echo $form['celular']->renderLabel() ?></div>
-		                <div class="form-campos">
-		                        <?php echo $form['celular'] ?>
-				                <?php echo $form['celular']->renderHelp() ?>
-		                </div>
-		        </div>
-
-		  <?php endif; ?>
 
 <?php #################################################################################### ?>
 
