@@ -499,13 +499,16 @@
 
 
           <?php echo $form->renderHiddenFields() ?>
-
+<br />
+<br />
+<br />
+<br />
 	<div class="form-botoes">
 		<div class="form-botao-voltar">
 			<? echo link_to(image_tag('voltar.gif', 'alt=Voltar'),'inscricao/inicio'); ?>
 		</div>
 		<div class="form-botao-enviar">
-			<? echo submit_image_tag('salvar.gif', array('style'=>'border: 0px;')) ?>
+			<? echo submit_image_tag('cadastrar_novo.gif', array('style'=>'border: 0px;')) ?>
 		</div>
 	</div>
 
