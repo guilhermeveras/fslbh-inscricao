@@ -27,54 +27,46 @@ class CadastroForm extends BaseCadastroForm
       'numero'                        => new sfWidgetFormInput(array(), array('onkeypress' => 'mascara(this,soNumeros)', 'maxlength' => '8')),
       'complemento'                   => new sfWidgetFormInput(),
       'estado'                        => new sfWidgetFormInput(array(), array('maxlength' => '2')),
-      'cep'                           => new sfWidgetFormInput(array(), array('onkeypress' => 'mascara(this,soNumeros)', 'maxlength' => '8')),
+      'cep'                           => new sfWidgetFormInput(array(), array('onkeypress' => 'mascara(this,cep)', 'maxlength' => '9')),
  	  'created_at'                    => new sfWidgetFormDateTime(),
   	  'celular'                       => new sfWidgetFormInput(array(), array('onkeypress' => 'mascara(this,telefone)', 'maxlength' => '14')),
       'instituicao_trabalho'          => new sfWidgetFormInput(array(), array('style'=>'width: 350px;')),
       'profissao'                     => new sfWidgetFormInput(array(), array('style'=>'width: 350px;')),
 
 	  'opcao_1_oficina' 			  => new sfWidgetFormChoice(array('choices'=>
-  										     array(
-  										     	'' => '',
-  										     	'1'=>'Educação é bom e o KDE gosta!',
-  										     	'2'=>'SAMBA4 + AD DEPLOYMENT TOOLS',
-  										     	'3' => 'OPENSTREETMAP',
-  										     	'4' => 'Aprendendo a usar e contribuir com o Software Livre',
-  										     	'5' => 'Software Livre, Open Source e Licenças',
-  										     	'6' => 'Asterisk fácil e rápido no Ubuntu',
-  										     	'7' => 'Debian custom and Debian BR-Desktop',
-  										     	'8' => 'Animação e modelagem com Blender e Gimp',
-  										     	'9' => 'Funcionalidades KDE 4.X e KDE-MG',
-  										     	'10' => 'Conhecimento e Liberdade: Uma mão lava a outra se estiverem livres',
-  										     	'11' => 'VIM! Typing like a hurricane!',
-  										     	'12' => 'Libertas Debian e ferramenta para criação de distribuições',
-  										     	'13' => 'Patchs de contribuição para o KDE',
-  										     	'14' => 'Introdução a Modelagem e Desenvolvimento Ágil de Sistemas com Symfony',
-  										     	'15' => 'Aprendendo Django com o EMA',
-  										     	'16' => 'XMPP/Jabber: Liberdade também nos bate-papos',
-  										     	'17' => 'Evolução do Software Livre'
-  										     ))),
+  										 array(
+'' => '',
+'1'=>'Palestra: Conheça e faça parte do Projeto KDE-MG',
+'2'=>'Palestra: Gnome love – você no seu Desktop',
+'3'=>'Palestra: LaTeX: Find you type!',
+'4'=>'Palestra: Migrando ambiente de desenvolvimento web proprietário para software livre',
+'5'=>'Palestra: Palestra Padrões Aberto e Informação Livre',
+'6'=>'Palestra: Software Livre: Revolucione!',
+'7'=>'Palestra: Software Livre, Open Source e Licenças',
+'8'=>'Oficina: Aprenda Qt e Contribua com o desenvolvimento do projeto KDE',
+'9'=>'Oficina: Asterisk no Ubuntu - mão na massa!',
+'10'=>'Oficina: Desenvolvimento PHP5 com smarty e PDO',
+'11'=>'Oficina: InkScape – Conheça a ferramenta livre para seus desenhos!',
+'12'=>'Oficina: Java para iniciantes',
+'13'=>'Oficina: Xen para Ambientes Corporativos',
+))),
 	  'opcao_2_oficina' 			  => new sfWidgetFormChoice(array('choices'=>
-  										     array(
-  										     	'' => '',
-  										     	'1'=>'Educação é bom e o KDE gosta!',
-  										     	'2'=>'SAMBA4 + AD DEPLOYMENT TOOLS',
-  										     	'3' => 'OPENSTREETMAP',
-  										     	'4' => 'Aprendendo a usar e contribuir com o Software Livre',
-  										     	'5' => 'Software Livre, Open Source e Licenças',
-  										     	'6' => 'Asterisk fácil e rápido no Ubuntu',
-  										     	'7' => 'Debian custom and Debian BR-Desktop',
-  										     	'8' => 'Animação e modelagem com Blender e Gimp',
-  										     	'9' => 'Funcionalidades KDE 4.X e KDE-MG',
-  										     	'10' => 'Conhecimento e Liberdade: Uma mão lava a outra se estiverem livres',
-  										     	'11' => 'VIM! Typing like a hurricane!',
-  										     	'12' => 'Libertas Debian e ferramenta para criação de distribuições',
-  										     	'13' => 'Patchs de contribuição para o KDE',
-  										     	'14' => 'Introdução a Modelagem e Desenvolvimento Ágil de Sistemas com Symfony',
-  										     	'15' => 'Aprendendo Django com o EMA',
-  										     	'16' => 'XMPP/Jabber: Liberdade também nos bate-papos',
-  										     	'17' => 'Evolução do Software Livre'
-  										     ))),
+  	array(
+'' => '',
+'1'=>'Palestra: Conheça e faça parte do Projeto KDE-MG',
+'2'=>'Palestra: Gnome love – você no seu Desktop',
+'3'=>'Palestra: LaTeX: Find you type!',
+'4'=>'Palestra: Migrando ambiente de desenvolvimento web proprietário para software livre',
+'5'=>'Palestra: Palestra Padrões Aberto e Informação Livre',
+'6'=>'Palestra: Software Livre: Revolucione!',
+'7'=>'Palestra: Software Livre, Open Source e Licenças',
+'8'=>'Oficina: Aprenda Qt e Contribua com o desenvolvimento do projeto KDE',
+'9'=>'Oficina: Asterisk no Ubuntu - mão na massa!',
+'10'=>'Oficina: Desenvolvimento PHP5 com smarty e PDO',
+'11'=>'Oficina: InkScape – Conheça a ferramenta livre para seus desenhos!',
+'12'=>'Oficina: Java para iniciantes',
+'13'=>'Oficina: Xen para Ambientes Corporativos',
+))),
 
     ));
 
@@ -152,6 +144,7 @@ class CadastroForm extends BaseCadastroForm
       $this->widgetSchema->setHelp('cep' ,'Informe aqui o seu Código de Endereçamento Postal (CEP), por exemplo: 31000-000.');
       $this->widgetSchema->setHelp('instituicao_trabalho' ,'Informe aqui o nome da empresa que você trabalha, por exemplo: Banco do Brasil.');
       $this->widgetSchema->setHelp('profissao' ,'Informe aqui a sua profissão, por exemplo: Analista de Sistemas.');
+       $this->widgetSchema->setHelp('municipio' ,'Informe aqui a sua cidade, por exemplo: Belo Horizonte.');
 
 
       $decorator = new totWidgetFormSchemaFormatter($this->getWidgetSchema());
