@@ -108,10 +108,10 @@ destas plataformas.
 um, teremos tópicos expositivos e atividades práticas para fixar conceitos.<p>", "Lamarque Viera Souza"); ?>
 
 
-<?php echo linhaQuadro3Colunas("10h as 12h<br/>Oficina<br />", "<strong>Asterisk no Ubuntu - mão na massa!</strong><br />&nbsp;<p>" .
+<?php /*echo linhaQuadro3Colunas("10h as 12h<br/>Oficina<br />", "<strong>Asterisk no Ubuntu - mão na massa!</strong><br />&nbsp;<p>" .
 "Asterisk no Ubuntu - O Asterisk é o software principal por trás das redes de telefonia sobre Internet, popularmente chamado de VOIP.
 <br />Aprenda como montar um ambiente de testes e homologação usando o Ubuntu, a distribuição Linux mais popular do mundo
-<br />Aprenda a montar um PABX digital, para um ambiente de testes e homologação.<p>", "Duda Nogueira"); ?>
+<br />Aprenda a montar um PABX digital, para um ambiente de testes e homologação.<p>", "Duda Nogueira"); */?>
 
 
 <?php echo linhaQuadro3Colunas("11h as 12h<br/>Palestra<br />Sala 2", "<strong>LaTeX: Find you type!</strong><br />&nbsp;<p>" .
@@ -162,13 +162,13 @@ um, teremos tópicos expositivos e atividades práticas para fixar conceitos.<p>
 <br/>
 7 – Principais ferramentas de desenvolvimento.
 <br/>
-<p>", "Bruce Mail"); ?>
+<p>", "Bruce Emmanuel Sueira"); ?>
 
 
 
-<?php echo linhaQuadro3Colunas("14h as 16h<br/>Palestra<br />Sala 1", "<strong>Software Livre: Revolucione!</strong><br />&nbsp;<p>" .
+<?php /*echo linhaQuadro3Colunas("14h as 16h<br/>Palestra<br />Sala 1", "<strong>Software Livre: Revolucione!</strong><br />&nbsp;<p>" .
 "Uma visão geral sobre o estado do Software Livre, quanto ao seu uso nos computadores desktop e como o usuário tem reagido ao usar ambientes desktops livres.
-<p>", "Duda Nogueira"); ?>
+<p>", "Duda Nogueira"); */?>
 
 
 
