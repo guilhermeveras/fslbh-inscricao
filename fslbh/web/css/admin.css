@@ -1,0 +1,188 @@
+/* MODULO Inscricao online */
+
+html, body{
+	background: url(/images/images-io/modulo_io_body_bg.png) fixed top left repeat-x;
+}
+
+#sgi-tudo{
+	background:url(/images/images-io/modulo_io_tudo_bg.png) top left repeat-y;
+}
+
+#sgi-topo    {
+	background:url(/images/images-io/modulo_io_topo_bg.png) top left no-repeat;
+}
+
+#sgi-menu-topo{
+	background:url(/images/images-io/modulo_io_menu_bg.png) top left no-repeat;
+	height:66px;
+}
+
+#sgi-sub-menu-topo{
+	background:url(/images/images-io/modulo_io_sub_menu_bg.png) top left no-repeat;
+	height:0px;
+}
+
+#sgi-pagina{
+	background:url(/images/images-io/modulo_io_pagina_bg.png) top left repeat-y;
+}
+
+#sgi-pagina-bottom{
+	background: url(/images/images-io/modulo_io_pagina_bottom2_bg.png) top left no-repeat;
+	height:48px;
+}
+
+#sgi-pagina-bottom2{
+	
+}
+
+#sgi-coluna-esquerda-top{
+	background: url(/images/images-io/modulo_io_coluna_esquerda_top_bg.png) top left no-repeat;
+}
+
+#sgi-conteudo-titulo{
+	background: url(/images/images-io/modulo_io_conteudo_top_bg.png) top left no-repeat;	
+}
+
+#sgi-rodape1{
+	 height: 0px;
+}
+#sgi-rodape2{
+	 background:url(/images/images/logo_gti.gif)  center no-repeat;
+	 height: 0px;
+}
+
+#sgi-conteudo{
+	min-height: 450px;	
+}
+#menu_lateral ul li a {
+	color: #6078A8;
+}
+#menu_lateral ul li a:hover, #menu_lateral ul li.selecionado a {
+	background: url(/images/images-io/modulo_io_menu_lateral_tarja.png);
+	color:#3366cc;
+}
+
+input{
+	border: 1px solid #ccc;
+	padding: 3px;
+}
+.menu-topo-azul{
+	display: block;
+	width: 910px;
+	text-align: center;
+	color: #0D4169;
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+#menu_lateral{
+	background: url(/images/images-io/modulo_io_menu.jpg) no-repeat;
+	height: 500px;
+}
+.error_list{
+	color: red;
+}
+.cadastro input{
+	width: 300px;
+}
+#div_ses_outros{
+	visibility: hidden;
+	display:none;
+}
+#div_hospitais{
+	visibility: hidden;
+	display:none;
+}
+#logo{
+	text-align: center;
+}
+
+
+/*--------------------------------CSS TABLE STYLE------------------------------------*/
+
+table{
+	border: 			0;
+	margin-top: 		10px;
+	width: 				100%;
+}
+th{
+	background: 		#0d4169;
+	border: 			1px solid white;
+	height: 			25px;
+	vertical-align: 	middle;
+	text-align: 		center;
+}
+td{
+	border: 			1px solid white;
+	background-color:   #f5f5f5;
+	padding:			2px;
+}
+.central{
+	text-align:			center;
+}
+.par {
+	background-color:	#dddddd;
+	border:				1px solid white;
+}
+.nota{
+	float:				left;
+	margin-left: 		20px;
+}
+
+.clear{clear: both;width: 0px;height: 0px;}
+
+textarea{
+	border:				1px solid #CCC;	
+}
+
+/*-------------------ADMIN-----------------------------------*/
+/*-------------------Disciplinas-----------------------------------*/
+
+	thead.cabecalho-lista-disciplinas tr th{
+		background: #0d4169;
+		color: #fff;
+		font-size: 12px;
+		padding: 3px;
+		border: 1px solid white;
+	}
+	#lista-disciplinas-1{width:69%;}
+	#lista-disciplinas-2{width:20%;}	
+	#lista-disciplinas-3{width:11%;}
+
+/* BASE MENU ADMIN */
+
+#menu_lateral{
+	width:				185px;
+	text-align: 		right;
+	padding: 			0px;
+}
+.links{
+	width:				180px;
+	text-align: 		right;
+	float: 				left;
+}
+.links ul li{
+	display: 			inline;
+}
+.links ul li strong{
+	display:			block;
+	margin-left: 		10px;
+	padding-bottom: 	3px;
+	padding-top: 		3px;
+	padding-right:		10px;
+	font-size:			13px;
+	font-weight:		bold;
+	width: 				160px;
+}
+.links ul li a{
+	color:				#000;
+	display: 			block;
+	font-size: 			12px;
+	margin-left: 		10px;
+	padding-top: 		3px;
+	padding-bottom: 	3px;
+	padding-right: 		10px;
+	text-align: 		right;
+	text-decoration:	none;
+	height: 			18px;
+}

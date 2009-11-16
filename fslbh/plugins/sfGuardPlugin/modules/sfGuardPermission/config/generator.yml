@@ -1,0 +1,29 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           sfGuardPermission
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          sf_guard_permission
+    with_propel_route:     1
+    css:                   nothing
+
+    config:
+      fields:
+        description: { label: "Descrição" }
+        name: { label: "Nome" }
+        
+      list:
+        title: Lista de permissões
+
+      edit:
+        title: Editando Permissão "%%name%%"
+
+      new:
+        title: Nova Permissão
+        
+      filter:
+          display: [name]
