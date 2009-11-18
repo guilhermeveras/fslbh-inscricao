@@ -16,6 +16,8 @@ As inscrições serão realizadas no menu ao lado "Faça sua Inscrição";<br>
 A sua inscrição será confirmada após a doação (no dia do evento) de um ou mais livros infanto-juvenil, as doações serão repassadas para a <strong>Fundação Espírita Cárita</strong><br />
 <br />Site: www.fundacaoespiritacarita.org.br
 <br /><br />
+
+Já são <strong><? echo $total ?></strong>.
 <? /*
 
 <div class="tipo_dados">News</div>
