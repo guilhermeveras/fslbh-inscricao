@@ -17,7 +17,7 @@ A sua inscrição será confirmada após a doação (no dia do evento) de um ou 
 <br />Site: www.fundacaoespiritacarita.org.br
 <br /><br />
 
-Já são <strong><? echo $total ?></strong> inscritos.
+<span style="color: red;">Já são <strong><? echo $total ?></strong> inscritos.</span>
 <? /*
 
 <div class="tipo_dados">News</div>
