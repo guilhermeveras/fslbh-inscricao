@@ -100,7 +100,7 @@ Instrução de repetição (for e while); <br /> </p>",
 
 
 <?php echo linhaQuadro3Colunas("13h as 17h<br/>Oficina<br />Lab 11", "<strong>Aprenda Qt e Contribua com o desenvolvimento do projeto KDE</strong><br />&nbsp;<p>" .
-"Este mini-curso de cinco horas visa apresentar as principais funcionalidades do
+"Este mini-curso visa apresentar as principais funcionalidades do
 Qt 4.5.x e KDE 4.2.x para o desenvolvimento produtivo de aplicações desktop
 multi-plataforma, discutir decisões de projeto, idiomas e apresentar
 ferramentas auxiliares para o desenvolvimento utilizando essas
