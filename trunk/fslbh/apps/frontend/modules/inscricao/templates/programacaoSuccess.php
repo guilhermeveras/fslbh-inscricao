@@ -99,7 +99,7 @@ Instrução de repetição (for e while); <br /> </p>",
 
 
 
-<?php echo linhaQuadro3Colunas("13h as 16h<br/>Oficina<br />Lab 11", "<strong>Aprenda Qt e Contribua com o desenvolvimento do projeto KDE</strong><br />&nbsp;<p>" .
+<?php echo linhaQuadro3Colunas("13h as 17h<br/>Oficina<br />Lab 11", "<strong>Aprenda Qt e Contribua com o desenvolvimento do projeto KDE</strong><br />&nbsp;<p>" .
 "Este mini-curso de cinco horas visa apresentar as principais funcionalidades do
 Qt 4.5.x e KDE 4.2.x para o desenvolvimento produtivo de aplicações desktop
 multi-plataforma, discutir decisões de projeto, idiomas e apresentar
@@ -111,12 +111,27 @@ destas plataformas.
 um, teremos tópicos expositivos e atividades práticas para fixar conceitos.<p>",
 "Lamarque Viera Souza"); ?>
 
+<?php echo linhaQuadro3Colunas("13h as 17h<br/>Palestra<br />Lab 9", "<strong>Django, Desenvolvimento Web da maneira correta</strong><br />&nbsp;<p>" .
+"Um framework para desenvolvimento Web que economiza seu tempo e torna a construção de sites uma diversão, permitindo que você construa e mantém alto padrão de qualidade nas aplicações com o mínimo de complicações
+<br /><br />
+* Introdução a Linguagem de Programção Python, levando em consideração que Django foi cem por cento (100%) desenvolvido nesta linguagem;<br />
+* Iniciando com Django, Instalação e Configurações;<br />
+* Aplicação prática de Model-View-Controller (MVC) e Don't-Repeat-Yourself (DRY);<br />
+* Objeto Relacional.<br />
+* Apresentação Teórica de Vantagens e Limitações.<br />
+<br />
+Django tem feito a Linguagem de Programação Python se tormar bastante conhecida para aplicações Web, sua performance de execução e desenvolvimento, estão deixando os programadores e designers encantados, considerando que o framework foi desenvolvido para quem precisa desenvolver muitas coisas em pouco tempo.
+<br />
+Desenvolvido por Adrian Holovaty em 2005, programador de um site de notícias Lawrence.com, o fez para suprir as necessidades do site em que trabalhava.",
+"Rodolfo Alves Pereira"); ?>
 
-<?php echo linhaQuadro3Colunas("10h as 12h<br/>Oficina<br />", "<strong>Asterisk no Ubuntu - mão na massa!</strong><br />&nbsp;<p>" .
+
+
+<?php /*echo linhaQuadro3Colunas("10h as 12h<br/>Oficina<br />", "<strong>Asterisk no Ubuntu - mão na massa!</strong><br />&nbsp;<p>" .
 "Asterisk no Ubuntu - O Asterisk é o software principal por trás das redes de telefonia sobre Internet, popularmente chamado de VOIP.
 <br />Aprenda como montar um ambiente de testes e homologação usando o Ubuntu, a distribuição Linux mais popular do mundo
 <br />Aprenda a montar um PABX digital, para um ambiente de testes e homologação.<p>",
-"Djavan Fagundes e Guilherme Guerra"); ?>
+"Djavan Fagundes e Guilherme Guerra"); */?>
 
 
 <?php echo linhaQuadro3Colunas("11h as 12h<br/>Palestra<br />Lab 7", "<strong>LaTeX: Find you type!</strong><br />&nbsp;<p>" .
@@ -139,7 +154,7 @@ um, teremos tópicos expositivos e atividades práticas para fixar conceitos.<p>
 <p>", "Licio Fonseca"); */?>
 
 
-<?php echo linhaQuadro3Colunas("14h as 16h<br/>Oficina<br />Lab 10", "<strong>InkScape - Conheça a ferramenta livre para seus desenhos!</strong><br />&nbsp;<p>" .
+<?php echo linhaQuadro3Colunas("14h as 16h<br/>Oficina<br />Lab 10", "<strong>Inkscape - Conheça a ferramenta livre para seus desenhos!</strong><br />&nbsp;<p>" .
 "Conheça esse poderoso editor de imagens vetoriais, a alternativa livre, eficaz e imprescindível aos programas proprietários do gênero.
 <br />A oficina introduzirá o aluno no desenho vetorial, mostrando conceitos elementares no uso do Inkscape, proporcionando aos mesmos a possibilidade do uso de uma ferramenta gratuita e livre para a elaboração de desenhos vetoriais profissionais.
 <p>", "Anderson Viana"); ?>
@@ -183,6 +198,9 @@ um, teremos tópicos expositivos e atividades práticas para fixar conceitos.<p>
 Amanda Oliveira"); ?>
 
 
+<?php echo linhaQuadro3Colunas("O dia todo<br/>Oficina<br />Intinerante", "<strong>Oficina de Jogos</strong><br />&nbsp;<p>" .
+"Oficina aberta à discussão de jogos livres. Venha saber por que estão equivocados aqueles que dizem que Linux serve apenas para servidores! Eventuais partidas e/ou campeonatos podem acontecer..",
+"Amanda Magalhães"); ?>
 
 
 <?php echo fimQuadro(); ?>
