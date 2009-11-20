@@ -73,12 +73,16 @@ class CadastroForm extends BaseCadastroForm
 '5'=>'Palestra: Palestra Padrões Aberto e Informação Livre',
 '6'=>'Palestra: Software Livre: Revolucione!',
 '7'=>'Palestra: Software Livre, Open Source e Licenças',
+'15'=>'Palestra: Django, Desenvolvimento Web da maneira correta',
 '8'=>'Oficina: Aprenda Qt e Contribua com o desenvolvimento do projeto KDE',
 //'9'=>'Oficina: Asterisk no Ubuntu - mão na massa!',
 '10'=>'Oficina: Desenvolvimento PHP5 com smarty e PDO',
 '11'=>'Oficina: InkScape – Conheça a ferramenta livre para seus desenhos!',
 '12'=>'Oficina: Java para iniciantes',
 '13'=>'Oficina: Xen para Ambientes Corporativos',
+'14'=>'Oficina: Oficina de Jogos',
+
+
 ))),
 	  'opcao_2_oficina' 			  => new sfWidgetFormChoice(array('choices'=>
   	array(
@@ -90,12 +94,14 @@ class CadastroForm extends BaseCadastroForm
 '5'=>'Palestra: Palestra Padrões Aberto e Informação Livre',
 '6'=>'Palestra: Software Livre: Revolucione!',
 '7'=>'Palestra: Software Livre, Open Source e Licenças',
+'15'=>'Palestra: Django, Desenvolvimento Web da maneira correta',
 '8'=>'Oficina: Aprenda Qt e Contribua com o desenvolvimento do projeto KDE',
 //'9'=>'Oficina: Asterisk no Ubuntu - mão na massa!',
 '10'=>'Oficina: Desenvolvimento PHP5 com smarty e PDO',
 '11'=>'Oficina: InkScape – Conheça a ferramenta livre para seus desenhos!',
 '12'=>'Oficina: Java para iniciantes',
 '13'=>'Oficina: Xen para Ambientes Corporativos',
+'14'=>'Oficina: Oficina de Jogos',
 ))),
 
     ));
