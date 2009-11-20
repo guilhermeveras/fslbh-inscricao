@@ -131,7 +131,7 @@ Desenvolvido por Adrian Holovaty em 2005, programador de um site de notícias La
 "Asterisk no Ubuntu - O Asterisk é o software principal por trás das redes de telefonia sobre Internet, popularmente chamado de VOIP.
 <br />Aprenda como montar um ambiente de testes e homologação usando o Ubuntu, a distribuição Linux mais popular do mundo
 <br />Aprenda a montar um PABX digital, para um ambiente de testes e homologação.<p>",
-"Djavan Fagundes e Guilherme Guerra"); */?>
+"Djavan Fagundes e Guilherme Guerras"); */?>
 
 
 <?php echo linhaQuadro3Colunas("11h as 12h<br/>Palestra<br />Lab 7", "<strong>LaTeX: Find you type!</strong><br />&nbsp;<p>" .
@@ -188,7 +188,7 @@ Desenvolvido por Adrian Holovaty em 2005, programador de um site de notícias La
 
 <?php echo linhaQuadro3Colunas("14h as 16h<br/>Palestra<br />Sala 1", "<strong>Software Livre: Revolucione!</strong><br />&nbsp;<p>" .
 "Uma visão geral sobre o estado do Software Livre, quanto ao seu uso nos computadores desktop e como o usuário tem reagido ao usar ambientes desktops livres.
-<p>", "Guilherme Guerras e Djavan Fagundes"); ?>
+<p>", "Guilherme Guerra e Djavan Fagundes"); ?>
 
 
 
